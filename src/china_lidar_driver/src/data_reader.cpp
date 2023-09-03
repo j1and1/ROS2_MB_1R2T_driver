@@ -127,9 +127,14 @@ private:
         scan_msg.angle_min = minAngle;
         scan_msg.angle_max = maxAngle;
         scan_msg.angle_increment =  (maxAngle - minAngle) / static_cast<float>(points.size()); //2 * M_PI / points.size();
-        scan_msg.time_increment = 0.2 / points.size(); // TODO: fix this
-        scan_msg.scan_time = 0.2; //TODO: not the real value
-        
+        scan_msg.scan_time = static_cast<float>(scan_msg.header.stamp.nanosec - ls_msg_base.header.stamp.nanosec) / std::pow(10.0f, 9.0f); //TODO: not the real value
+        scan_msg.time_increment = scan_msg.scan_time / static_cast<float>(points.size()); // TODO: fix this
+        ls_msg_base.header.stamp = scan_msg.header.stamp;
+
+        //scan_msg.angle_increment = 2.0f * M_PI / static_cast<float>(points.size());
+        //scan_msg.time_increment = 0.2f / static_cast<float>(points.size()); // TODO: not corectly calculated yet, but better than nothing...
+        //scan_msg.scan_time = 0.2f;//TODO: not the real value
+
         for(size_t i = 0; i < points.size(); i++) 
         { 
             const ChinaLidar::Vector2D& vector = points.at((points.size()-1) - i);

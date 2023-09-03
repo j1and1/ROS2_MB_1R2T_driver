@@ -50,47 +50,7 @@ namespace ChinaLidar
         }
 
         // configure serial port
-        /*struct termios tty;
-        memset(&tty, 0, sizeof(tty));
-        if (tcgetattr(serial_fd, &tty) != 0) {
-            perror("Failed to get serial port attributes");
-            printf("Fail 2");
-            return;
-        }
-        // set baud rate (Why POSIX does this in this sketchy way?)
-        //tty.c_cflag &= ~CBAUD;
-        //const auto ret = cfsetspeed(&tty, baudrate);
-        
-        // ok lets do the hack for custom baud rates
-        // Set a standard baud rate as a base
-        cfsetospeed(&tty, B38400);
-        cfsetispeed(&tty, B38400);
-
-        // Calculate custom divisor
-        int custom_divisor = static_cast<int>(tty.c_ospeed / baudrate + 0.5);
-        // Set custom divisor for non-standard baud rate
-        if (ioctl(serial_fd, TIOCSSERIAL, &custom_divisor) != 0) {
-            perror("Error setting custom baud rate");
-            return;
-        }
-
-        // Apply the specified settings
-        tty.c_cflag |= (CLOCAL | CREAD); // Enable receiver and ignore modem control lines
-        tty.c_cflag &= ~PARENB;          // No parity
-        tty.c_cflag &= ~CSTOPB;          // 1 stop bit
-        tty.c_cflag &= ~CSIZE;           // Clear data size bits
-        tty.c_cflag |= CS8;              // 8 data bits
-
-        // Set flow control to none
-        tty.c_cflag &= ~CRTSCTS;
-
-        // Apply the changes to the serial port attributes
-        if (tcsetattr(serial_fd, TCSANOW, &tty) != 0) {
-            perror("Failed to set serial port attributes");
-            printf("Fail 3");
-            return;
-        }*/
-        
+        // TODO: fix baudrate issues
         struct termios2 tty;
         memset(&tty, 0, sizeof(tty));
         if (workaround::ioctl(serial_fd, TCGETS2, &tty) != 0) {
@@ -188,6 +148,8 @@ namespace ChinaLidar
                 read(serial_fd, raw_data.data() + 10, data_length);
                 // this part is ported from python script posted on Vidcon discord server
                 // not sure why python code that just visualizes the data was doing this
+                //printf("header.type = %d\n", header.type);
+                
                 if (header.type & 1)
                 {
                     if(on_point_cloud_received)
@@ -210,7 +172,7 @@ namespace ChinaLidar
                     if (header.data_length - 1 < 1)
                     {
                         angle_per_sample = 1;
-                        //return;
+                        return;
                     }
                     else
                     {

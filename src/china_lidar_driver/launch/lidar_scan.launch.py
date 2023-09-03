@@ -36,9 +36,9 @@ def generate_launch_description():
         executable = 'data_reader',
         output = 'screen',
         parameters = [
-            'baud_rate' : baud,
-            'device': serial,
-            'frame_id': frame_id
+            'baud_rate', baud,
+            'device', serial,
+            'frame_id', frame_id
         ]
     )
 
