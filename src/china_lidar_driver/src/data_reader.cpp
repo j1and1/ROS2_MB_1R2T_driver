@@ -106,11 +106,27 @@ private:
             return;
         }
         
+        // Initialize variables to store the maximum and minimum angles
+        float maxAngle = std::numeric_limits<float>::min();
+        float minAngle = std::numeric_limits<float>::max();
+
+        // Iterate through the vector to find the maximum and minimum angles
+        for (const auto& v : points) {
+            if (v.angle > maxAngle) {
+                maxAngle = v.angle;
+            }
+            if (v.angle < minAngle) {
+                minAngle = v.angle;
+            }
+        }
+
         // take copy of the original message
         LS scan_msg = ls_msg_base;
         scan_msg.header.stamp = clock->now();
         // need to calculate this from points that are in scan
-        scan_msg.angle_increment = 2 * M_PI / points.size();
+        scan_msg.angle_min = minAngle;
+        scan_msg.angle_max = maxAngle;
+        scan_msg.angle_increment =  (maxAngle - minAngle) / static_cast<float>(points.size()); //2 * M_PI / points.size();
         scan_msg.time_increment = 0.2 / points.size(); // TODO: fix this
         scan_msg.scan_time = 0.2; //TODO: not the real value
         

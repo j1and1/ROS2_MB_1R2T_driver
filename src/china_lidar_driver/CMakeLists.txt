@@ -16,7 +16,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(data_reader src/data_reader.cpp src/lidar_interaction.cpp)
+add_executable(data_reader src/data_reader.cpp src/lidar_interaction.cpp src/conflict_workaround.cpp)
 ament_target_dependencies(data_reader rclcpp sensor_msgs)
 
 install(TARGETS

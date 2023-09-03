@@ -1,7 +1,11 @@
 #include "china_lidar_driver/lidar_interaction.hpp"
 
+// include workarounds
+#include "china_lidar_driver/conflict_workaround.hpp"
+
 #include <linux/serial.h>
-#include <termios.h>
+//#include <termios.h>
+#include <asm/termios.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
@@ -32,7 +36,7 @@ namespace ChinaLidar
         , const std::string& new_port, uint32_t new_baud)
         : baudrate(new_baud)
         , port(new_port)
-        , raw_data(160)
+        , raw_data(1024)
         , on_point_cloud_received(point_cloud_cb)
         , on_scan_data_received(scan_cb)
     {
@@ -46,7 +50,7 @@ namespace ChinaLidar
         }
 
         // configure serial port
-        struct termios tty;
+        /*struct termios tty;
         memset(&tty, 0, sizeof(tty));
         if (tcgetattr(serial_fd, &tty) != 0) {
             perror("Failed to get serial port attributes");
@@ -55,15 +59,20 @@ namespace ChinaLidar
         }
         // set baud rate (Why POSIX does this in this sketchy way?)
         //tty.c_cflag &= ~CBAUD;
-        /*tty.c_cflag |= BOTHER;
-        tty.c_ispeed = baudrate;
-        tty.c_ospeed = baudrate;*/
         //const auto ret = cfsetspeed(&tty, baudrate);
         
         // ok lets do the hack for custom baud rates
         // Set a standard baud rate as a base
         cfsetospeed(&tty, B38400);
         cfsetispeed(&tty, B38400);
+
+        // Calculate custom divisor
+        int custom_divisor = static_cast<int>(tty.c_ospeed / baudrate + 0.5);
+        // Set custom divisor for non-standard baud rate
+        if (ioctl(serial_fd, TIOCSSERIAL, &custom_divisor) != 0) {
+            perror("Error setting custom baud rate");
+            return;
+        }
 
         // Apply the specified settings
         tty.c_cflag |= (CLOCAL | CREAD); // Enable receiver and ignore modem control lines
@@ -80,11 +89,11 @@ namespace ChinaLidar
             perror("Failed to set serial port attributes");
             printf("Fail 3");
             return;
-        }
-        /*
+        }*/
+        
         struct termios2 tty;
         memset(&tty, 0, sizeof(tty));
-        if (ioctl(serial_fd, TCGETS2, &tty) != 0) {
+        if (workaround::ioctl(serial_fd, TCGETS2, &tty) != 0) {
             perror("Failed to get serial port attributes");
             printf("Fail 2");
             return;
@@ -106,12 +115,11 @@ namespace ChinaLidar
         tty.c_cflag &= ~CRTSCTS;
 
         // Apply the changes to the serial port attributes
-        if (ioctl(serial_fd, TCSETS2, &tty) != 0) {
+        if (workaround::ioctl(serial_fd, TCSETS2, &tty) != 0) {
             perror("Failed to set serial port attributes");
             printf("Fail 3");
             return;
         }
-        */
 
         state = State::SYNC0;
     }
@@ -131,7 +139,7 @@ namespace ChinaLidar
         PacketHeader header;
 
         state = State::SYNC0;
-        raw_data.resize(160);
+        raw_data.resize(1024);
         memset(raw_data.data(), 0, raw_data.size() * sizeof(uint8_t));
         while (serial_fd != -1 && !has_data)
         {
@@ -201,7 +209,8 @@ namespace ChinaLidar
                 {
                     if (header.data_length - 1 < 1)
                     {
-                        angle_per_sample = angle_diff;
+                        angle_per_sample = 1;
+                        //return;
                     }
                     else
                     {
