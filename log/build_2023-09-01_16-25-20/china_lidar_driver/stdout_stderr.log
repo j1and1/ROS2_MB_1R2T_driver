@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target data_reader[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/data_reader.dir/src/data_reader.cpp.o[0m
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:[m[K In constructor ‘[01m[KDataReader::DataReader()[m[K’:
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:33:13:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[KChinaLidar::LidarInteraction::PCCallback&[m[K’ {aka ‘[01m[Kstd::function<void(const std::vector<ChinaLidar::Point2D>&)>&[m[K’} to an rvalue of type ‘[01m[KChinaLidar::LidarInteraction::PCCallback[m[K’ {aka ‘[01m[Kstd::function<void(const std::vector<ChinaLidar::Point2D>&)>[m[K’}
+   33 |             [01;31m[Kpc_callback[m[K, ls_callback,
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/future:47[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/std_function.h:435:9:[m[K [01;36m[Knote: [m[K  after user-defined conversion: ‘[01m[Kstd::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D>&)>&; _Constraints = void; _Res = void; _ArgTypes = {const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&}][m[K’
+  435 |         [01;36m[Kfunction[m[K(_Functor&& __f)
+      |         [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:6[m[K:
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/include/china_lidar_driver/lidar_interaction.hpp:39:34:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KChinaLidar::LidarInteraction::LidarInteraction(ChinaLidar::LidarInteraction::PCCallback&, ChinaLidar::LidarInteraction::ScanCallback&, const string&, uint32_t)[m[K’
+   39 |     LidarInteraction([01;36m[KPCCallback& point_cloud_cb[m[K, ScanCallback& scan_cb
+      |                      [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:[m[K In member function ‘[01m[Kvoid DataReader::createLaserScanMessage(const std::vector<ChinaLidar::Vector2D>&)[m[K’:
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:79:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ChinaLidar::Vector2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   79 |         for(int i = 0; [01;35m[Ki < points.size()[m[K; i++)
+      |                        [01;35m[K~~^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/data_reader.dir/build.make:76: CMakeFiles/data_reader.dir/src/data_reader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_reader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,38 @@
+{
+    "context":"../",
+    "dockerFile": "../Dockerfile",
+    // Run container as non root user
+    "runArgs": [
+        // Audio related stuff
+        "--privileged", "--device", "/dev/snd",
+        // GUI stuff
+        //"--device", "/dev/dri",
+        "-e", "DISPLAY=${env:DISPLAY}",
+        // This will allow you to use a ptrace-based debugger like C++, Go, and Rust.
+        // need GDB
+        "--cap-add=SYS_PTRACE",
+        "--security-opt", "seccomp=unconfined",
+    ],
+    "mounts": [
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
+        "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached",
+        "source=/dev/ttyUSB0,target=/dev/ttyUSB0,type=bind,consistency=cached",
+    ],
+    "containerEnv": {
+        "DISPLAY": "unix:0",
+        "ROS_LOCALHOST_ONLY": "1",
+        "ROS_DOMAIN_ID": "42"
+    },
+    // List of all extensions used for this container.
+    "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools",
+        "ms-iot.vscode-ros",
+        "smilerobotics.urdf",
+        "yzhang.markdown-all-in-one"
+    ]
+}

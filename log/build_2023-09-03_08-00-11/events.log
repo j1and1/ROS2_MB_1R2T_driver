@@ -1,0 +1,46 @@
+[0.000000] (-) TimerEvent: {}
+[0.000444] (china_lidar_driver) JobQueued: {'identifier': 'china_lidar_driver', 'dependencies': OrderedDict()}
+[0.000698] (china_lidar_driver) JobStarted: {'identifier': 'china_lidar_driver'}
+[0.012174] (china_lidar_driver) JobProgress: {'identifier': 'china_lidar_driver', 'progress': 'cmake'}
+[0.012624] (china_lidar_driver) JobProgress: {'identifier': 'china_lidar_driver', 'progress': 'build'}
+[0.013201] (china_lidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/gh_mk2/build/china_lidar_driver', '--', '-j12', '-l12'], 'cwd': '/workspaces/gh_mk2/build/china_lidar_driver', 'env': OrderedDict([('HOSTNAME', 'dd3f5c63d6c1'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.81.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-8556a7b5-0b37-4b72-aa42-0fdbbaafc30e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/workspaces/gh_mk2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-04f38132-6b2b-4689-9038-8fe8f059f9bf.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-04f38132-6b2b-4689-9038-8fe8f059f9bf.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-97e2ea5ab1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-04f38132-6b2b-4689-9038-8fe8f059f9bf.sock'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/workspaces/gh_mk2/install/china_lidar_driver:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/gh_mk2/build/china_lidar_driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/gh_mk2/install/china_lidar_driver:/opt/ros/humble')]), 'shell': False}
+[0.060547] (china_lidar_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_reader\x1b[0m\n'}
+[0.076443] (china_lidar_driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/data_reader.dir/src/lidar_interaction.cpp.o\x1b[0m\n'}
+[0.100008] (-) TimerEvent: {}
+[0.200265] (-) TimerEvent: {}
+[0.300491] (-) TimerEvent: {}
+[0.371914] (china_lidar_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/sys/ioctl.h:29\x1b[m\x1b[K,\n'}
+[0.372060] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:7\x1b[m\x1b[K:\n'}
+[0.372120] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/ioctl-types.h:27:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct winsize\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.372175] (china_lidar_driver) StderrLine: {'line': b'   27 | struct \x1b[01;31m\x1b[Kwinsize\x1b[m\x1b[K\n'}
+[0.372233] (china_lidar_driver) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.372285] (china_lidar_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/asm/termios.h:1\x1b[m\x1b[K,\n'}
+[0.372337] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:6\x1b[m\x1b[K:\n'}
+[0.372387] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/asm-generic/termios.h:15:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct winsize\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.372438] (china_lidar_driver) StderrLine: {'line': b'   15 | struct \x1b[01;36m\x1b[Kwinsize\x1b[m\x1b[K {\n'}
+[0.372487] (china_lidar_driver) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[0.372536] (china_lidar_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/sys/ioctl.h:29\x1b[m\x1b[K,\n'}
+[0.372585] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:7\x1b[m\x1b[K:\n'}
+[0.372634] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/ioctl-types.h:36:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kstruct termio\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.372683] (china_lidar_driver) StderrLine: {'line': b'   36 | struct \x1b[01;31m\x1b[Ktermio\x1b[m\x1b[K\n'}
+[0.372731] (china_lidar_driver) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.372779] (china_lidar_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/asm/termios.h:1\x1b[m\x1b[K,\n'}
+[0.372826] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:6\x1b[m\x1b[K:\n'}
+[0.372874] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/asm-generic/termios.h:23:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kstruct termio\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.372922] (china_lidar_driver) StderrLine: {'line': b'   23 | struct \x1b[01;36m\x1b[Ktermio\x1b[m\x1b[K {\n'}
+[0.372970] (china_lidar_driver) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.400582] (-) TimerEvent: {}
+[0.471325] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ChinaLidar::LidarInteraction::parseData()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.471460] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:140:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis statement may fall through [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=\x07-Wimplicit-fallthrough=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.471523] (china_lidar_driver) StderrLine: {'line': b'  140 |                 \x1b[01;35m\x1b[Kstate = State::DATA\x1b[m\x1b[K;\n'}
+[0.471577] (china_lidar_driver) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.471628] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:142:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Khere\n'}
+[0.471679] (china_lidar_driver) StderrLine: {'line': b'  142 |             \x1b[01;36m\x1b[Kcase\x1b[m\x1b[K State::DATA:\n'}
+[0.471728] (china_lidar_driver) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.481522] (china_lidar_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/data_reader.dir/build.make:90: CMakeFiles/data_reader.dir/src/lidar_interaction.cpp.o] Error 1\n'}
+[0.482065] (china_lidar_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_reader.dir/all] Error 2\n'}
+[0.482530] (china_lidar_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[0.485685] (china_lidar_driver) CommandEnded: {'returncode': 2}
+[0.500710] (-) TimerEvent: {}
+[0.530153] (china_lidar_driver) JobEnded: {'identifier': 'china_lidar_driver', 'rc': 2}
+[0.540783] (-) EventReactorShutdown: {}

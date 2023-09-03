@@ -1,0 +1,37 @@
+[0.012s] Invoking command in '/workspaces/gh_mk2/build/china_lidar_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/gh_mk2/build/china_lidar_driver -- -j12 -l12
+[0.057s] [ 33%] [32mBuilding CXX object CMakeFiles/data_reader.dir/src/lidar_interaction.cpp.o[0m
+[0.523s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:[m[K In member function ‘[01m[Kvoid ChinaLidar::LidarInteraction::parseData()[m[K’:
+[0.523s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:139:23:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+[0.523s]   139 |                 [01;35m[Kstate = State::DATA[m[K;
+[0.523s]       |                 [01;35m[K~~~~~~^~~~~~~~~~~~~[m[K
+[0.523s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:141:13:[m[K [01;36m[Knote: [m[Khere
+[0.523s]   141 |             [01;36m[Kcase[m[K State::DATA:
+[0.523s]       |             [01;36m[K^~~~[m[K
+[0.672s] [ 66%] [32m[1mLinking CXX executable data_reader[0m
+[0.991s] [100%] Built target data_reader
+[0.999s] Invoked command in '/workspaces/gh_mk2/build/china_lidar_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/gh_mk2/build/china_lidar_driver -- -j12 -l12
+[1.025s] Invoking command in '/workspaces/gh_mk2/build/china_lidar_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/gh_mk2/build/china_lidar_driver
+[1.031s] -- Install configuration: "Debug"
+[1.031s] -- Installing: /workspaces/gh_mk2/install/china_lidar_driver/lib/china_lidar_driver/data_reader
+[1.034s] -- Set runtime path of "/workspaces/gh_mk2/install/china_lidar_driver/lib/china_lidar_driver/data_reader" to ""
+[1.034s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//launch
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//launch/lidar_scan.launch.py
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//launch/lidar_view.launch.py
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//rviz
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//rviz/china_lidar_rviz_config.rviz
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/ament_index/resource_index/package_run_dependencies/china_lidar_driver
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/ament_index/resource_index/parent_prefix_path/china_lidar_driver
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/environment/ament_prefix_path.sh
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/environment/ament_prefix_path.dsv
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/environment/path.sh
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/environment/path.dsv
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/local_setup.bash
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/local_setup.sh
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/local_setup.zsh
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/local_setup.dsv
+[1.035s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/package.dsv
+[1.036s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/ament_index/resource_index/packages/china_lidar_driver
+[1.036s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/cmake/china_lidar_driverConfig.cmake
+[1.036s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/cmake/china_lidar_driverConfig-version.cmake
+[1.036s] -- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/package.xml
+[1.037s] Invoked command in '/workspaces/gh_mk2/build/china_lidar_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/gh_mk2/build/china_lidar_driver

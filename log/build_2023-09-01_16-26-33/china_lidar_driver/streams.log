@@ -1,0 +1,32 @@
+[0.018s] Invoking command in '/workspaces/gh_mk2/build/china_lidar_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/gh_mk2/build/china_lidar_driver -- -j12 -l12
+[0.069s] [35m[1mConsolidate compiler generated dependencies of target data_reader[0m
+[0.096s] [ 33%] [32mBuilding CXX object CMakeFiles/data_reader.dir/src/lidar_interaction.cpp.o[0m
+[0.097s] [ 66%] [32mBuilding CXX object CMakeFiles/data_reader.dir/src/data_reader.cpp.o[0m
+[0.541s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:14:67:[m[K [01;31m[Kerror: [m[K‘[01m[KScanCallbacks[m[K’ has not been declared
+[0.541s]    14 |     LidarInteraction::LidarInteraction(PCCallback point_cloud_cb, [01;31m[KScanCallbacks[m[K scan_cb
+[0.542s]       |                                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[0.542s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:14:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[KChinaLidar::LidarInteraction::LidarInteraction(ChinaLidar::LidarInteraction::PCCallback, int, const string&, uint32_t)[m[K’
+[0.542s]    14 |     [01;31m[KLidarInteraction[m[K::LidarInteraction(PCCallback point_cloud_cb, ScanCallbacks scan_cb
+[0.542s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.542s] In file included from [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:1[m[K:
+[0.542s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/include/china_lidar_driver/lidar_interaction.hpp:25:7:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[KChinaLidar::LidarInteraction::LidarInteraction(const ChinaLidar::LidarInteraction&)[m[K’
+[0.542s]    25 | class [01;36m[KLidarInteraction[m[K
+[0.543s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[0.543s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/include/china_lidar_driver/lidar_interaction.hpp:39:5:[m[K [01;36m[Knote: [m[K                ‘[01m[KChinaLidar::LidarInteraction::LidarInteraction(ChinaLidar::LidarInteraction::PCCallback, ChinaLidar::LidarInteraction::ScanCallback, const string&, uint32_t)[m[K’
+[0.543s]    39 |     [01;36m[KLidarInteraction[m[K(PCCallback point_cloud_cb, ScanCallback scan_cb
+[0.543s]       |     [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[0.543s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/include/china_lidar_driver/lidar_interaction.hpp:25:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ChinaLidar::LidarInteraction[m[K’ defined here
+[0.543s]    25 | class [01;36m[KLidarInteraction[m[K
+[0.543s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[0.544s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:14:40:[m[K [01;31m[Kerror: [m[K‘[01m[Ktypedef class std::function<void(const std::vector<ChinaLidar::Point2D>&)> ChinaLidar::LidarInteraction::PCCallback[m[K’ is private within this context
+[0.544s]    14 |     LidarInteraction::LidarInteraction([01;31m[KPCCallback[m[K point_cloud_cb, ScanCallbacks scan_cb
+[0.544s]       |                                        [01;31m[K^~~~~~~~~~[m[K
+[0.544s] In file included from [01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:1[m[K:
+[0.544s] [01m[K/workspaces/gh_mk2/src/china_lidar_driver/include/china_lidar_driver/lidar_interaction.hpp:27:62:[m[K [01;36m[Knote: [m[Kdeclared private here
+[0.544s]    27 |     typedef std::function<void(const std::vector<Point2D>&)> [01;36m[KPCCallback[m[K;
+[0.544s]       |                                                              [01;36m[K^~~~~~~~~~[m[K
+[0.592s] gmake[2]: *** [CMakeFiles/data_reader.dir/build.make:90: CMakeFiles/data_reader.dir/src/lidar_interaction.cpp.o] Error 1
+[0.592s] gmake[2]: *** Waiting for unfinished jobs....
+[6.139s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_reader.dir/all] Error 2
+[6.140s] gmake: *** [Makefile:146: all] Error 2
+[6.142s] Invoked command in '/workspaces/gh_mk2/build/china_lidar_driver' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/gh_mk2/build/china_lidar_driver -- -j12 -l12

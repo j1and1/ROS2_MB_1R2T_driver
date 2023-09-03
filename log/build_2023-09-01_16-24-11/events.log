@@ -1,0 +1,96 @@
+[0.000000] (-) TimerEvent: {}
+[0.000133] (china_lidar_driver) JobQueued: {'identifier': 'china_lidar_driver', 'dependencies': OrderedDict()}
+[0.000694] (china_lidar_driver) JobStarted: {'identifier': 'china_lidar_driver'}
+[0.016234] (china_lidar_driver) JobProgress: {'identifier': 'china_lidar_driver', 'progress': 'cmake'}
+[0.016958] (china_lidar_driver) JobProgress: {'identifier': 'china_lidar_driver', 'progress': 'build'}
+[0.017804] (china_lidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/gh_mk2/build/china_lidar_driver', '--', '-j12', '-l12'], 'cwd': '/workspaces/gh_mk2/build/china_lidar_driver', 'env': OrderedDict([('HOSTNAME', '9648a1ccd90b'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.81.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-4cca7400-61b5-4687-b6cd-d766ba409024.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-54405e10-2712-4e91-b6ef-4a964491a7f7.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-54405e10-2712-4e91-b6ef-4a964491a7f7.sock","/tmp/.X11-unix/X0","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':2'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-97e2ea5ab1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-54405e10-2712-4e91-b6ef-4a964491a7f7.sock'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/gh_mk2/build/china_lidar_driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.072642] (china_lidar_driver) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target data_reader\x1b[0m\n'}
+[0.093711] (china_lidar_driver) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/data_reader.dir/src/lidar_interaction.cpp.o\x1b[0m\n'}
+[0.093958] (china_lidar_driver) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/data_reader.dir/src/data_reader.cpp.o\x1b[0m\n'}
+[0.099745] (-) TimerEvent: {}
+[0.200096] (-) TimerEvent: {}
+[0.300524] (-) TimerEvent: {}
+[0.400951] (-) TimerEvent: {}
+[0.501235] (-) TimerEvent: {}
+[0.601629] (-) TimerEvent: {}
+[0.702115] (-) TimerEvent: {}
+[0.802469] (-) TimerEvent: {}
+[0.902837] (-) TimerEvent: {}
+[1.003192] (-) TimerEvent: {}
+[1.103539] (-) TimerEvent: {}
+[1.203859] (-) TimerEvent: {}
+[1.304196] (-) TimerEvent: {}
+[1.404509] (-) TimerEvent: {}
+[1.504849] (-) TimerEvent: {}
+[1.605168] (-) TimerEvent: {}
+[1.705528] (-) TimerEvent: {}
+[1.805932] (-) TimerEvent: {}
+[1.906477] (-) TimerEvent: {}
+[2.006870] (-) TimerEvent: {}
+[2.107263] (-) TimerEvent: {}
+[2.207566] (-) TimerEvent: {}
+[2.307859] (-) TimerEvent: {}
+[2.408203] (-) TimerEvent: {}
+[2.508525] (-) TimerEvent: {}
+[2.608826] (-) TimerEvent: {}
+[2.709162] (-) TimerEvent: {}
+[2.809527] (-) TimerEvent: {}
+[2.909924] (-) TimerEvent: {}
+[3.010272] (-) TimerEvent: {}
+[3.110696] (-) TimerEvent: {}
+[3.211010] (-) TimerEvent: {}
+[3.311314] (-) TimerEvent: {}
+[3.411621] (-) TimerEvent: {}
+[3.511907] (-) TimerEvent: {}
+[3.573997] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DataReader::createLaserScanMessage(const std::vector<ChinaLidar::Vector2D>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.574233] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:79:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<ChinaLidar::Vector2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.574340] (china_lidar_driver) StderrLine: {'line': b'   79 |         for(int i = 0; \x1b[01;35m\x1b[Ki < points.size()\x1b[m\x1b[K; i++)\n'}
+[3.574431] (china_lidar_driver) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.612033] (-) TimerEvent: {}
+[3.712344] (-) TimerEvent: {}
+[3.812612] (-) TimerEvent: {}
+[3.912889] (-) TimerEvent: {}
+[4.013235] (-) TimerEvent: {}
+[4.113629] (-) TimerEvent: {}
+[4.213943] (-) TimerEvent: {}
+[4.298904] (china_lidar_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[4.299367] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[4.299483] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[4.299580] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[4.299670] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:1\x1b[m\x1b[K:\n'}
+[4.299759] (china_lidar_driver) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = ChinaLidar::LidarInteraction; _Args = {std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&)>&, std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Vector2D, std::allocator<ChinaLidar::Vector2D> >&)>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, long int}; _Tp = ChinaLidar::LidarInteraction]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.299869] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = ChinaLidar::LidarInteraction; _Args = {std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&)>&, std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Vector2D, std::allocator<ChinaLidar::Vector2D> >&)>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, long int}; _Tp = ChinaLidar::LidarInteraction; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<ChinaLidar::LidarInteraction>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.299962] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&)>&, std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Vector2D, std::allocator<ChinaLidar::Vector2D> >&)>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, long int}; _Tp = ChinaLidar::LidarInteraction; _Alloc = std::allocator<ChinaLidar::LidarInteraction>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.300058] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = ChinaLidar::LidarInteraction; _Alloc = std::allocator<ChinaLidar::LidarInteraction>; _Args = {std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&)>&, std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Vector2D, std::allocator<ChinaLidar::Vector2D> >&)>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, long int}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.300177] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ChinaLidar::LidarInteraction>; _Args = {std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&)>&, std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Vector2D, std::allocator<ChinaLidar::Vector2D> >&)>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, long int}; _Tp = ChinaLidar::LidarInteraction; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.300274] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<ChinaLidar::LidarInteraction>; _Args = {std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&)>&, std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Vector2D, std::allocator<ChinaLidar::Vector2D> >&)>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, long int}; _Tp = ChinaLidar::LidarInteraction]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.300370] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = ChinaLidar::LidarInteraction; _Alloc = std::allocator<ChinaLidar::LidarInteraction>; _Args = {std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&)>&, std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Vector2D, std::allocator<ChinaLidar::Vector2D> >&)>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, long int}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.300468] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = ChinaLidar::LidarInteraction; _Args = {std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&)>&, std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Vector2D, std::allocator<ChinaLidar::Vector2D> >&)>&, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, long int}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.300568] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:32:75:\x1b[m\x1b[K   required from here\n'}
+[4.300659] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot bind non-const lvalue reference of type \xe2\x80\x98\x1b[01m\x1b[KChinaLidar::LidarInteraction::PCCallback&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(const std::vector<ChinaLidar::Point2D>&)>&\x1b[m\x1b[K\xe2\x80\x99} to an rvalue of type \xe2\x80\x98\x1b[01m\x1b[KChinaLidar::LidarInteraction::PCCallback\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::function<void(const std::vector<ChinaLidar::Point2D>&)>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[4.300752] (china_lidar_driver) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[4.300840] (china_lidar_driver) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.300936] (china_lidar_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/future:47\x1b[m\x1b[K,\n'}
+[4.301023] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[4.301110] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.301227] (china_lidar_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:1\x1b[m\x1b[K:\n'}
+[4.301327] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_function.h:435:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  after user-defined conversion: \xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = std::_Bind<void (DataReader::*(DataReader*, std::_Placeholder<1>))(const std::vector<ChinaLidar::Point2D>&)>&; _Constraints = void; _Res = void; _ArgTypes = {const std::vector<ChinaLidar::Point2D, std::allocator<ChinaLidar::Point2D> >&}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.301429] (china_lidar_driver) StderrLine: {'line': b'  435 |         \x1b[01;36m\x1b[Kfunction\x1b[m\x1b[K(_Functor&& __f)\n'}
+[4.301517] (china_lidar_driver) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.301603] (china_lidar_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:6\x1b[m\x1b[K:\n'}
+[4.301690] (china_lidar_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/gh_mk2/src/china_lidar_driver/include/china_lidar_driver/lidar_interaction.hpp:39:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[KChinaLidar::LidarInteraction::LidarInteraction(ChinaLidar::LidarInteraction::PCCallback&, ChinaLidar::LidarInteraction::ScanCallback&, const string&, uint32_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.301781] (china_lidar_driver) StderrLine: {'line': b'   39 |     LidarInteraction(\x1b[01;36m\x1b[KPCCallback& point_cloud_cb\x1b[m\x1b[K, ScanCallback& scan_cb\n'}
+[4.301890] (china_lidar_driver) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.314101] (-) TimerEvent: {}
+[4.414567] (-) TimerEvent: {}
+[4.515073] (-) TimerEvent: {}
+[4.615467] (-) TimerEvent: {}
+[4.715911] (-) TimerEvent: {}
+[4.816262] (-) TimerEvent: {}
+[4.853645] (china_lidar_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/data_reader.dir/build.make:76: CMakeFiles/data_reader.dir/src/data_reader.cpp.o] Error 1\n'}
+[4.853867] (china_lidar_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_reader.dir/all] Error 2\n'}
+[4.854007] (china_lidar_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.856082] (china_lidar_driver) CommandEnded: {'returncode': 2}
+[4.905532] (china_lidar_driver) JobEnded: {'identifier': 'china_lidar_driver', 'rc': 2}
+[4.916421] (-) TimerEvent: {}
+[4.917451] (-) EventReactorShutdown: {}

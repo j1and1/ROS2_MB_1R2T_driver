@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target data_reader[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/data_reader.dir/src/lidar_interaction.cpp.o[0m
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:[m[K In constructor ‘[01m[KChinaLidar::LidarInteraction::LidarInteraction(ChinaLidar::LidarInteraction::PCCallback, ChinaLidar::LidarInteraction::ScanCallback, const string&, uint32_t)[m[K’:
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:52:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kioctl[m[K’ was not declared in this scope
+   52 |         if ([01;31m[Kioctl[m[K(serial_fd, TCGETS2, &tty) != 0) {
+      |             [01;31m[K^~~~~[m[K
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:74:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kioctl[m[K’ was not declared in this scope
+   74 |         if ([01;31m[Kioctl[m[K(serial_fd, TCSETS2, &tty) != 0) {
+      |             [01;31m[K^~~~~[m[K
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:[m[K In member function ‘[01m[Kvoid ChinaLidar::LidarInteraction::parseData()[m[K’:
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:139:23:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+  139 |                 [01;35m[Kstate = State::DATA[m[K;
+      |                 [01;35m[K~~~~~~^~~~~~~~~~~~~[m[K
+[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/lidar_interaction.cpp:141:13:[m[K [01;36m[Knote: [m[Khere
+  141 |             [01;36m[Kcase[m[K State::DATA:
+      |             [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/data_reader.dir/build.make:90: CMakeFiles/data_reader.dir/src/lidar_interaction.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_reader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

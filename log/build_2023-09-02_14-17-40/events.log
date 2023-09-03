@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000456] (china_lidar_driver) JobQueued: {'identifier': 'china_lidar_driver', 'dependencies': OrderedDict()}
+[0.000532] (china_lidar_driver) JobStarted: {'identifier': 'china_lidar_driver'}
+[0.023047] (china_lidar_driver) JobProgress: {'identifier': 'china_lidar_driver', 'progress': 'cmake'}
+[0.023610] (china_lidar_driver) JobProgress: {'identifier': 'china_lidar_driver', 'progress': 'build'}
+[0.024888] (china_lidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/gh_mk2/build/china_lidar_driver', '--', '-j12', '-l12'], 'cwd': '/workspaces/gh_mk2/build/china_lidar_driver', 'env': OrderedDict([('HOSTNAME', 'dd3f5c63d6c1'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.81.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-bfe5ef8f-a3b3-482a-b63b-4b5961d3daf2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/workspaces/gh_mk2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-337fac8f-8928-496a-bc10-8c4bfd08ed62.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-337fac8f-8928-496a-bc10-8c4bfd08ed62.sock","/tmp/.X11-unix/X8","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-97e2ea5ab1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-337fac8f-8928-496a-bc10-8c4bfd08ed62.sock'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/workspaces/gh_mk2/install/china_lidar_driver:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X8'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/gh_mk2/build/china_lidar_driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/gh_mk2/install/china_lidar_driver:/opt/ros/humble')]), 'shell': False}
+[0.080687] (china_lidar_driver) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/data_reader.dir/src/data_reader.cpp.o\x1b[0m\n'}
+[0.099836] (-) TimerEvent: {}
+[0.200184] (-) TimerEvent: {}
+[0.300566] (-) TimerEvent: {}
+[0.401083] (-) TimerEvent: {}
+[0.501518] (-) TimerEvent: {}
+[0.601770] (-) TimerEvent: {}
+[0.702105] (-) TimerEvent: {}
+[0.802410] (-) TimerEvent: {}
+[0.902710] (-) TimerEvent: {}
+[1.003154] (-) TimerEvent: {}
+[1.103588] (-) TimerEvent: {}
+[1.203891] (-) TimerEvent: {}
+[1.304379] (-) TimerEvent: {}
+[1.404787] (-) TimerEvent: {}
+[1.505176] (-) TimerEvent: {}
+[1.605524] (-) TimerEvent: {}
+[1.705863] (-) TimerEvent: {}
+[1.806231] (-) TimerEvent: {}
+[1.906610] (-) TimerEvent: {}
+[2.007005] (-) TimerEvent: {}
+[2.107530] (-) TimerEvent: {}
+[2.207971] (-) TimerEvent: {}
+[2.308386] (-) TimerEvent: {}
+[2.408876] (-) TimerEvent: {}
+[2.509439] (-) TimerEvent: {}
+[2.609892] (-) TimerEvent: {}
+[2.710330] (-) TimerEvent: {}
+[2.810800] (-) TimerEvent: {}
+[2.911084] (-) TimerEvent: {}
+[3.011486] (-) TimerEvent: {}
+[3.111811] (-) TimerEvent: {}
+[3.212224] (-) TimerEvent: {}
+[3.312583] (-) TimerEvent: {}
+[3.412952] (-) TimerEvent: {}
+[3.513500] (-) TimerEvent: {}
+[3.613854] (-) TimerEvent: {}
+[3.714271] (-) TimerEvent: {}
+[3.814636] (-) TimerEvent: {}
+[3.914912] (-) TimerEvent: {}
+[4.015339] (-) TimerEvent: {}
+[4.115707] (-) TimerEvent: {}
+[4.216090] (-) TimerEvent: {}
+[4.316558] (-) TimerEvent: {}
+[4.416963] (-) TimerEvent: {}
+[4.517482] (-) TimerEvent: {}
+[4.617890] (-) TimerEvent: {}
+[4.718216] (-) TimerEvent: {}
+[4.818571] (-) TimerEvent: {}
+[4.919070] (-) TimerEvent: {}
+[5.019488] (-) TimerEvent: {}
+[5.119867] (-) TimerEvent: {}
+[5.220204] (-) TimerEvent: {}
+[5.320551] (-) TimerEvent: {}
+[5.420986] (-) TimerEvent: {}
+[5.521248] (-) TimerEvent: {}
+[5.621548] (-) TimerEvent: {}
+[5.721908] (-) TimerEvent: {}
+[5.822246] (-) TimerEvent: {}
+[5.922479] (-) TimerEvent: {}
+[6.022708] (-) TimerEvent: {}
+[6.123032] (-) TimerEvent: {}
+[6.223278] (-) TimerEvent: {}
+[6.323738] (-) TimerEvent: {}
+[6.424069] (-) TimerEvent: {}
+[6.524346] (-) TimerEvent: {}
+[6.624801] (-) TimerEvent: {}
+[6.725083] (-) TimerEvent: {}
+[6.825446] (-) TimerEvent: {}
+[6.925931] (-) TimerEvent: {}
+[7.026394] (-) TimerEvent: {}
+[7.071361] (china_lidar_driver) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable data_reader\x1b[0m\n'}
+[7.126473] (-) TimerEvent: {}
+[7.226839] (-) TimerEvent: {}
+[7.327322] (-) TimerEvent: {}
+[7.427751] (-) TimerEvent: {}
+[7.524613] (china_lidar_driver) StdoutLine: {'line': b'[100%] Built target data_reader\n'}
+[7.527854] (-) TimerEvent: {}
+[7.535810] (china_lidar_driver) CommandEnded: {'returncode': 0}
+[7.571863] (china_lidar_driver) JobProgress: {'identifier': 'china_lidar_driver', 'progress': 'install'}
+[7.583873] (china_lidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/gh_mk2/build/china_lidar_driver'], 'cwd': '/workspaces/gh_mk2/build/china_lidar_driver', 'env': OrderedDict([('HOSTNAME', 'dd3f5c63d6c1'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/helpers/browser.sh'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.81.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-bfe5ef8f-a3b3-482a-b63b-4b5961d3daf2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/workspaces/gh_mk2/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-337fac8f-8928-496a-bc10-8c4bfd08ed62.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/vscode/vscode-server/bin/linux-x64/6c3e3dba23e8fadc360aed75ce363ba185c49794/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-337fac8f-8928-496a-bc10-8c4bfd08ed62.sock","/tmp/.X11-unix/X8","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-97e2ea5ab1.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-337fac8f-8928-496a-bc10-8c4bfd08ed62.sock'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/workspaces/gh_mk2/install/china_lidar_driver:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X8'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/gh_mk2/build/china_lidar_driver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/gh_mk2/install/china_lidar_driver:/opt/ros/humble')]), 'shell': False}
+[7.593254] (china_lidar_driver) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[7.595229] (china_lidar_driver) StdoutLine: {'line': b'-- Installing: /workspaces/gh_mk2/install/china_lidar_driver/lib/china_lidar_driver/data_reader\n'}
+[7.601027] (china_lidar_driver) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/gh_mk2/install/china_lidar_driver/lib/china_lidar_driver/data_reader" to ""\n'}
+[7.601429] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//launch\n'}
+[7.601561] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//launch/lidar_scan.launch.py\n'}
+[7.601661] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//launch/lidar_view.launch.py\n'}
+[7.601717] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//rviz\n'}
+[7.601803] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//rviz/china_lidar_rviz_config.rviz\n'}
+[7.601886] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver//rviz/view.rviz\n'}
+[7.601970] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/ament_index/resource_index/package_run_dependencies/china_lidar_driver\n'}
+[7.602059] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/ament_index/resource_index/parent_prefix_path/china_lidar_driver\n'}
+[7.602125] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/environment/ament_prefix_path.sh\n'}
+[7.602181] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/environment/ament_prefix_path.dsv\n'}
+[7.602235] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/environment/path.sh\n'}
+[7.602298] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/environment/path.dsv\n'}
+[7.602365] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/local_setup.bash\n'}
+[7.602441] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/local_setup.sh\n'}
+[7.602510] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/local_setup.zsh\n'}
+[7.602592] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/local_setup.dsv\n'}
+[7.602643] (china_lidar_driver) StdoutLine: {'line': b'-- Installing: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/package.dsv\n'}
+[7.602696] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/ament_index/resource_index/packages/china_lidar_driver\n'}
+[7.602754] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/cmake/china_lidar_driverConfig.cmake\n'}
+[7.602815] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/cmake/china_lidar_driverConfig-version.cmake\n'}
+[7.602875] (china_lidar_driver) StdoutLine: {'line': b'-- Up-to-date: /workspaces/gh_mk2/install/china_lidar_driver/share/china_lidar_driver/package.xml\n'}
+[7.605167] (china_lidar_driver) CommandEnded: {'returncode': 0}
+[7.627935] (-) TimerEvent: {}
+[7.668405] (china_lidar_driver) JobEnded: {'identifier': 'china_lidar_driver', 'rc': 0}
+[7.669032] (-) EventReactorShutdown: {}
