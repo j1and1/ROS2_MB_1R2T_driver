@@ -1,6 +1,6 @@
 {
     "context":"../",
-    "dockerFile": "../Dockerfile",
+    "dockerFile": "../Dockerfile.dev",
     // Run container as non root user
     "runArgs": [
         // Audio related stuff

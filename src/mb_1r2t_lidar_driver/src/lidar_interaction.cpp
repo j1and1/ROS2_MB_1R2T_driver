@@ -45,7 +45,6 @@ namespace ChinaLidar
         if (serial_fd == -1)
         {
             perror("Error opening serial port");
-            printf("Fail 1");
             return;
         }
 
@@ -55,7 +54,6 @@ namespace ChinaLidar
         memset(&tty, 0, sizeof(tty));
         if (workaround::ioctl(serial_fd, TCGETS2, &tty) != 0) {
             perror("Failed to get serial port attributes");
-            printf("Fail 2");
             return;
         }
         // set baud rate (Why POSIX does this in this sketchy way?)
@@ -63,21 +61,10 @@ namespace ChinaLidar
         tty.c_cflag |= BOTHER;
         tty.c_ispeed = baudrate;
         tty.c_ospeed = baudrate;
-        
-        // Apply the specified settings
-        tty.c_cflag |= (CLOCAL | CREAD); // Enable receiver and ignore modem control lines
-        tty.c_cflag &= ~PARENB;          // No parity
-        tty.c_cflag &= ~CSTOPB;          // 1 stop bit
-        tty.c_cflag &= ~CSIZE;           // Clear data size bits
-        tty.c_cflag |= CS8;              // 8 data bits
-
-        // Set flow control to none
-        tty.c_cflag &= ~CRTSCTS;
 
         // Apply the changes to the serial port attributes
         if (workaround::ioctl(serial_fd, TCSETS2, &tty) != 0) {
             perror("Failed to set serial port attributes");
-            printf("Fail 3");
             return;
         }
 
@@ -146,8 +133,6 @@ namespace ChinaLidar
             {
                 uint16_t data_length = header.data_length * 3;
                 read(serial_fd, raw_data.data() + 10, data_length);
-                // this part is ported from python script posted on Vidcon discord server
-                // not sure why python code that just visualizes the data was doing this
                 //printf("header.type = %d\n", header.type);
                 
                 if (header.type & 1)
@@ -172,7 +157,7 @@ namespace ChinaLidar
                     if (header.data_length - 1 < 1)
                     {
                         angle_per_sample = 1;
-                        return;
+                        //return;
                     }
                     else
                     {

@@ -1,5 +1,0 @@
-[31mCMake Error at cmake_install.cmake:66 (file):
-  file INSTALL cannot find "/workspaces/gh_mk2/src/china_lidar_driver/rviz":
-  No such file or directory.
-
-[0m

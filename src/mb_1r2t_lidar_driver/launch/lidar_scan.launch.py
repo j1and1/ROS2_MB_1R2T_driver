@@ -8,8 +8,8 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     pkg_name = 'mb_1r2t_lidar_driver'
-    launch_file_dir = os.path.join(get_package_share_directory(pkg_name), 'launch')
-    pkg_dir = get_package_share_directory(pkg_name)
+    #launch_file_dir = os.path.join(get_package_share_directory(pkg_name), 'launch')
+    #pkg_dir = get_package_share_directory(pkg_name)
 
     baud = LaunchConfiguration('baud_rate', default='153600')
     serial = LaunchConfiguration('device', default='/dev/ttyUSB0')

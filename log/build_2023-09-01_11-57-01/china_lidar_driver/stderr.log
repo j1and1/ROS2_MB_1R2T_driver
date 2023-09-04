@@ -1,7 +1,0 @@
-[01m[K/workspaces/gh_mk2/src/china_lidar_driver/src/data_reader.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/LaserScan.h: No such file or directory
-    3 | #include [01;31m[K"sensor_msgs/LaserScan.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/data_reader.dir/build.make:76: CMakeFiles/data_reader.dir/src/data_reader.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_reader.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

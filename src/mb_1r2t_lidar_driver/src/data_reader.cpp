@@ -131,10 +131,6 @@ private:
         scan_msg.time_increment = scan_msg.scan_time / static_cast<float>(points.size()); // TODO: fix this
         ls_msg_base.header.stamp = scan_msg.header.stamp;
 
-        //scan_msg.angle_increment = 2.0f * M_PI / static_cast<float>(points.size());
-        //scan_msg.time_increment = 0.2f / static_cast<float>(points.size()); // TODO: not corectly calculated yet, but better than nothing...
-        //scan_msg.scan_time = 0.2f;//TODO: not the real value
-
         for(size_t i = 0; i < points.size(); i++) 
         { 
             const ChinaLidar::Vector2D& vector = points.at((points.size()-1) - i);
