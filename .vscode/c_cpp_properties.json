@@ -7,7 +7,7 @@
       },
       "includePath": [
         "/opt/ros/humble/include/**",
-        "/workspaces/gh_mk2/src/china_lidar_driver/include/**",
+        "/workspaces/gh_mk2/src/mb_1r2t_lidar_driver/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

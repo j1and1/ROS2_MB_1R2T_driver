@@ -3,8 +3,8 @@
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 
-#include "china_lidar_driver/lidar_interaction.hpp"
-#include "china_lidar_driver/point_cloud_data_structs.hpp"
+#include "mb_1r2t_lidar_driver/lidar_interaction.hpp"
+#include "mb_1r2t_lidar_driver/point_cloud_data_structs.hpp"
 
 #include <vector>
 #include <string>

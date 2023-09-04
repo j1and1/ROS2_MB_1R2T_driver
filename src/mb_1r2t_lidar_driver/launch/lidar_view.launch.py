@@ -7,7 +7,7 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
 def generate_launch_description():
-    pkg_name = 'china_lidar_driver'
+    pkg_name = 'mb_1r2t_lidar_driver'
     #launch_file_dir = os.path.join(get_package_share_directory(pkg_name), 'launch')
     #pkg_dir = get_package_share_directory(pkg_name)
     rviz_config_path = os.path.join(

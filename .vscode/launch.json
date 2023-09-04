@@ -5,7 +5,7 @@
             "id": "package",
             "type": "promptString",
             "description": "Package name",
-            "default": "china_lidar_driver"
+            "default": "mb_1r2t_lidar_driver"
         },
         {
             "id": "program",

@@ -1,4 +1,4 @@
-#include "china_lidar_driver/conflict_workaround.hpp"
+#include "mb_1r2t_lidar_driver/conflict_workaround.hpp"
 
 #include <sys/ioctl.h>
 
